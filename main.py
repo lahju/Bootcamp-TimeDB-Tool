@@ -28,6 +28,7 @@ def display_dataframe():
 def display_plotly_chart():
     fig = go.Figure()
     if df is not None:
+        print(df)
         first_column = df[df.columns[0]]
         for col in df.columns[1:]:
             fig.add_trace(
@@ -103,6 +104,7 @@ def hande_resample(resolution, aggregation):
     global df
     df = analysis_methods.resample_database(df, resolution, aggregation)
     display_dataframe.refresh()
+    display_plotly_chart.refresh()
     resample.close()
 
 
