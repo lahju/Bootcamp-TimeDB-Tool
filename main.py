@@ -133,6 +133,8 @@ def update_database_list():
     global file_names
     current_directory = os.path.dirname(os.path.abspath(__file__))
     databases_directory = os.path.join(current_directory, "databases")
+    if not os.path.exists(databases_directory):
+            os.makedirs(databases_directory)
     file_names = [
         file
         for file in os.listdir(databases_directory)

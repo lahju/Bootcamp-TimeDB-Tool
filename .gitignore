@@ -1,3 +1,7 @@
 __pycache__/analysis_methods.cpython-311.pyc
 __pycache__/
-databases/
+
+databases/kulutus_2022.db
+databases/Kulutus_2023.db
+databases/Spot_hinnat_2022.db
+databases/Yhdistetty_2022.db
