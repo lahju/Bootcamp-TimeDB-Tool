@@ -22,7 +22,7 @@ def database_to_dataframe(database_name):
 
 
 def csv_to_dataframe(csv_file):
-    df = pd.read_csv(csv_file, delimiter=";", decimal=",", skipinitialspace=True)
+    df = pd.read_csv(csv_file, delimiter=";", decimal=",", skipinitialspace=True, encoding="latin1")
     return df
 
 
